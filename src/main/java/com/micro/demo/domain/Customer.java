@@ -22,9 +22,5 @@ public class Customer {
 		this.age=age;
 	}
 
-	@Override
-	public String toString() {
-		return String.format("Customer[id=%s, firstName='%s', lastName='%s', age='%s']", id, firstName, lastName,age);
-	}
 
 }

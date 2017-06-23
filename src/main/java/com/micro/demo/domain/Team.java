@@ -23,28 +23,6 @@ public class Team {
 		this.players = players;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
-	public Set<Player> getPlayers() {
-		return players;
-	}
-
-	public void setPlayers(Set<Player> players) {
-		this.players = players;
-	}
+	
 	
 }

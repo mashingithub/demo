@@ -28,9 +28,5 @@ public class TeamController {
 		team= new Team("RCB","Bangalore",players);
 	}
 	
-	@RequestMapping("/team")
-	public Team getTeam(){
-		service.saveCustomers();
-		return team;
-	}
+	
 }

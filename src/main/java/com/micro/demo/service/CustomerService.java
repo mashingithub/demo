@@ -11,20 +11,6 @@ public class CustomerService {
 	@Autowired
 	private CustomerRepository repository;
 
-	public void saveCustomers() {
-		repository.deleteAll();
-
-		repository.save(new Customer("Mahesh", "kg","23"));
-		repository.save(new Customer("Satteppa", "guj","35"));
-
-		for (Customer customer : repository.findAll()) {
-			System.out.println(customer);
-		}
-
-		System.out.println(repository.findByFirstName("Mahesh"));
-
-
-	}
 	
 	public void saveCustomer(CustomerRequest customerReq) {
 		Customer customer=new Customer(customerReq.firstName,customerReq.lastName,customerReq.age);
